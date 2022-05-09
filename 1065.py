@@ -1,5 +1,4 @@
-# 1065, silver4, 한수
-# 결국 본질적으로 한수는 등차수열인게 중요해, 각 자리의 차이만 일정하게 유지되면 count
+# 1065, silver4
 
 def isHansu(num):
     numlist = list(map(int,str(num)))
@@ -15,7 +14,10 @@ def isHansu(num):
 
 n = int(input())
 count = 0
-for i in range(n):
-    count += isHansu(i+1)
+if n <= 99:
+    print(n)
 
-print(count)
+else:
+    for i in range(n):
+        count += isHansu(i+1)
+    print(count)
