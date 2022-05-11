@@ -1,5 +1,3 @@
-# 알고리즘 잡스 CT 이벤트 문제
-# < x번째 숫자 구하기 2 >
 # https://ssafylive.org/SSAFY_CT_EV 
 
 x = int(input())
